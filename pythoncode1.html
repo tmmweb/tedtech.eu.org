@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=python&amp;skin=sunburst"></script>
+    <link rel="stylesheet" href="css/pythoncodecss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href = 'img/favicon.png' type='image/x-icon'/>
+    <link rel="stylesheet" href="css/pythoncodereponsive.css">
+    <link rel="stylesheet" href="css/copy.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Python Codes Set 1</title>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img/img.jpg" alt="logo"></div>
+            <li><a href="index.html#">Home</a></li>
+            <li><a href="code.html">Codes</a></li>
+            <li><a href="index.html#about">About</a></li>
+           
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="section">
+        <div class="paras">
+            <br><br>
+            <p class="sectionTagtext-big">Python Codes Set 1</p>
+            <p class="sectionSubTag text-small">
+                <br><br>
+                <p class="sectionSubTagtext-small">1. Sum calculator</p>
+                <button onclick="copyToClipboard()" id="mbtn" class = "btn1" >Copy</button>
+                <br>
+                <br>
+                <br>
+                <pre id="p1" class = "prettyprint">
+print ("enter first number")
+yoness = input()
+print ("enter your second number")
+yoness2 = input()
+print ("sum is")
+print (int(yoness)+int(yoness2))
+#made by tanush</pre>
+                <br><br>
+                <p class="sectionSubTagtext-small">
+                    2. Dictionary Practice Programme
+                </p>
+                <button onclick="copyToClipboard2()" id="mbtn2" class = "btn2" >Copy</button>
+                <br>
+                <br>
+                <br>
+    <pre id="p2" class="prettyprint">
+print("Welcome To Tanush's Dictionary\n:) :)")
+d1 = {"yo" : "yoness" , "hello" : "helloness" , 
+        "super" : "superness" , "duper" : "duperness"}
+# print (d1)
+while True:
+    print ("enter value")
+    var = input()
+    print(d1[var])</pre>
+                <br><br>
+                <p class="sectionSubTagtext-small">
+                    3. Can I Drive ? Checker
+                </p>
+                <button onclick="copyToClipboard3()" id="mbtn3" class = "btn3" >Copy</button>
+                <br>
+                <br>
+                <br>
+                <pre id="p3" class="prettyprint">
+print("\nwelcome to checker")
+print("\nEnter your age")
+var = int(input())
+while (var<8 or var > 100):
+    print("Please enter a valid age")
+    var = int(input())           
+if var>18 and var < 100:
+    print("You can drive")
+elif var<18 and var>7:
+    print("Sorry you can't drive")
+elif var==18:
+    print("please come to our center to be checked")
+else:
+    True
+print("\nThank You for using")
+print("\nMade by Tanush Chauhan")</pre>
+                
+                <br><br>
+                <p class="sectionSubTagtext-small">
+                    4. Faulty Calculator
+                </p>
+                <button onclick="copyToClipboard4()" id="mbtn4" class = "btn4" >Copy</button>
+                <br>
+                <br>
+                <br>
+    <pre id="p4" class="prettyprint">
+print("\nWelcome to calculator\n")
+op=int(input("Please enter the operation\n\n1 for multiply\n2 for subtraction\n3 for addition\nFor division enter any value leaving 1 2 3\nenter here:"))
+if op == 1:
+        print ("Enter first number")
+        num1=int(input())
+        print ("Enter second number")
+        num2=int(input())
+        if num1 == 45 and num2 == 3:
+            print("Ans:")
+            print("555")
+        elif num1 == 3 and num2 == 45:
+            print("Ans:")
+            print("555")
+        else:
+            print("Ans:")
+            print(num1*num2)
+    
+elif op == 2:
+        print ("Enter first number")
+        num3=int(input())
+        print ("Enter second number")
+        num4=int(input())
+        print("Ans:")
+        print(num3-num4)
+    
+elif op == 3:
+        print ("Enter first number")
+        num5=int(input())
+        print ("Enter second number")
+        num6=int(input())
+        if num5 == 56 and num6 == 9:
+            print("Ans:")
+            print("77")
+        elif num5 == 9 and num6 == 56:
+            print("Ans:")
+            print("77")
+        else:
+            print("Ans:")
+            print(num5+num6)
+        
+    
+else:
+        print ("Enter first number")
+        num7=int(input())
+        print ("Enter second number")
+        num8=int(input())
+        if num7 == 56 and num8 == 6:
+            print("Ans:")
+            print("4")
+        else:
+            print("Ans:")
+            print(num7/num8)
+print("\nThank you for using")
+
+#Faulty calculations : 45*3 = 555 , 56+9 = 77 , 56/6 = 4</pre>
+    </p>
+    <br><br>
+    <p class="sectionSubTagtext-small">5. For loop Practice</p>
+    <button onclick="copyToClipboard5()" id="mbtn5" class = "btn5" >Copy</button>
+    <br>
+                <br>
+                <br>
+    <pre id="p5" class="prettyprint">list = [ 1 , 2, 3, 4, 5, "marrie",6,7,8,9,11,12,13,14 ]
+    for item in list:
+            if isinstance(item,int):
+                if item>6:
+                    print(item)</pre>
+                    <br><br>
+                    <p class="sectionSubTagtext-small">6. Random Practice Programme</p>
+                    <button onclick="copyToClipboard6()" id="mbtn6" class = "btn6" >Copy</button>
+                    <br>
+                <br>
+                <br>
+    <pre id="p6" class="prettyprint">print("\nWelcome to Ramdom\n")
+    while (True):
+            var = int(input("\nPlease enter number:"))
+            if var>100:
+                break
+            else:
+                print("Try Again")
+                continue
+    print("Congrasulation you entered a number Greater than 100!!")</pre>
+        <br><br>
+        <p class="sectionSubTagtext-small">7. Guess the number game!</p>
+        <button onclick="copyToClipboard7()" id="mbtn7" class = "btn7" >Copy</button>
+        <br>
+                <br>
+                <br>
+    <pre id="p7" class="prettyprint">
+import random
+n = random.randint(0, 100)
+i = 9
+print("\nWelcome to the Game\n")
+print("Rules:\n")
+print("There is a number stored. Try to guess it. Don't look at the code because it is not here. It would be random.\nThere are limited number of guesses.You can see the number below\nEach time you will be told The guess is greater or smaller.\nThe number will be between 0 and 100.It could Be 0 or 100 also. \nDon't Cheat or edit the code.\nBest of luck :) ")
+print("\nGuesses left =",i)
+while(True):
+        
+        
+        try: 
+            var = int(input("Enter your guess:\n"))
+            i = i - 1
+        except:
+            continue
+        if var == n:
+            print("\nYou Won the Game :)")
+            print("Want to play again? Yes(1) No (2):")
+            try:  
+                    ch = int(input())
+            except:
+                    print("You Entered a wrong character and the game ia stoping.\nIf you want to play again then run the file again.\nBye  ")
+                    break
+            if ch == 1:
+                i = 9
+                n = random.randint(0, 100)
+    
+                print("\nGuesses left = 9\n")
+                
+                continue
+            elif ch == 2:
+                print("\nSee You Soon in a new code Good Bye\n")
+                break
+            else:
+                break
+        elif var == 5505:
+            print("\n\nScreat code \ngusesess left = 9")
+            i = 9
+            
+            continue
+        elif var == 95625505:
+            
+            print("\n"+str(n)+"\n")
+            int(n)
+            print("Make number smaller")
+            print("guesses left =",i)
+            continue
+        elif i == 0:
+                print("\nWrong\nGuesses over you lost :(\nThe correct Number was",n)
+                print("Want to play again? Yes(1) No (2):")
+                try:  
+                    ch = int(input())
+                except:
+                    break
+                if ch == 1:
+                    
+                    n = random.randint(0, 100)
+                    i = 9
+                    print("\nGuesses left = 9\n")
+                    continue
+                elif ch == 2:
+                        print("\nSee You Soon in a new code Good Bye\n")
+                        break
+                else:
+                        break
+        else:
+            
+            if var>n:
+                print("\n\nMake nuber smaller")
+            
+                print("guesses left = ", i)
+            elif var < n:
+                print("\n\nMake nuber bigger")
+            
+                print("guesses left = ", i)
+            
+            else:
+                True
+    
+print("Made By Tanush Chauhan :)")
+#screat code is 5505 try it!
+#one more screat code is 95625505 try it !</pre>
+    <br><br>
+    <p class="sectionSubTagtext-small">8. Pattern Printer Programme</p>
+    <button onclick="copyToClipboard8()" id="mbtn8" class = "btn8" >Copy</button>
+    <br>
+                <br>
+                <br>
+    <pre  id="p8" class="prettyprint">print("Welcome to Programme")
+print("\nInput True (any integer other than 0)) or False (0):")
+    
+djn = int(input())
+djn = bool(djn)
+    
+if djn == True:
+        print("\nPlease enter the value:")
+        n = int(input())
+        print()
+        for a in range(n):
+            for b in range(a+1):
+                print("*",end = " ")
+            print ()
+    
+    
+elif djn == False:
+        print("\nPlease enter the value:")
+        n = int(input())
+        print()
+        for a in range(n):
+            for b in range(n-a):
+                    print("*",end = " ")
+            print ()
+    
+else:
+        True</pre>
+            <br><br>
+            <p class="sectionSubTagtext-small">9. Health Management System</p>
+            <button onclick="copyToClipboard9()" id="mbtn9" class = "btn9" >Copy</button>
+            <br>
+                <br>
+                <br>
+    
+    <pre id="p9" class="prettyprint">print("\nWelcome to the Health Management System Made By Tanush Chauhan\n")
+def gettime():
+    import datetime
+    return datetime.datetime.now()
+while (True):
+    
+        print("please Enter the pin to continue :")
+        passs = int(input())
+        if passs == 4567:
+            print("Correct pin\n")
+            print("Do you want to write data(1) or resive data(2) ? : ")
+            rp = int(input())
+            if rp == 1:
+                print("For whom you want to write data Harry(1) , Rohan (2) , hammd(3) ? :")
+                rp2 = int(input())
+                if rp2 == 1:
+                    print("Please Enter the pin for Harry")
+                    passs3 = int(input())
+                    if passs3 == 2956:
+                        print("Which data you want to enter food(1) or exerise(2) ? :")
+                        rp3 = int(input())
+                    
+                        if rp3 == 1:
+                            print("Please Enter The Data : ")
+                            datahf = input()
+                            with open("harryfood.txt" , "a") as fhf:
+                                fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                print("\nSucessfully Added the data")
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                                print("Please Enter The Data : ")
+                                datahf = input()
+                                with open("harryex.txt" , "a") as fhf:
+                                    fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                    print("\nSucessfully Added the data")
+                                    print("\nDo you want to continue(1) or exit(2) ? :")
+                                rp64 = int(input())    
+                                if rp64 == 1:
+                                    continue
+                                elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                                else:
+                                    True
+                        else:
+                                True
+                        
+                    else:
+                            print("\nWrong pin")
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                                
+                            if rp64 == 1:
+                                    continue
+                                
+                            elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                            else:
+                                    True
+
+
+                elif rp2 == 2:
+                        print("Please Enter the pin for Rohan")
+                        passs3 = int(input())
+                        if passs3 == 3867:
+                            
+                    
+                
+                            print("Which data you want to enter food(1) or exerise(2) ? :")
+                            rp3 = int(input())
+                            if rp3 == 1:
+                                print("Please Enter The Data : ")
+                                datahf = input()
+                                with open("rohanfood.txt" , "a") as fhf:
+                                    fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                    print("\nSucessfully Added the data")
+                                    print("\nDo you want to continue(1) or exit(2) ? :")
+                                rp64 = int(input())    
+                                if rp64 == 1:
+                                    continue
+                                elif rp64 == 2:
+                                    print("Bye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                                else:
+                                    True
+                            elif rp3 == 2:
+                                print("Please Enter The Data : ")
+                                datahf = input()
+                                with open("rohanex.txt" , "a") as fhf:
+                                    fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                    print("\nSucessfully Added the data")
+                                    print("\nDo you want to continue(1) or exit(2) ? :")
+                                rp64 = int(input())    
+                                if rp64 == 1:
+                                    continue
+                                elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                                else:
+                                    True
+                            else:
+                                True
+                        else:
+                            print("\nWrong pin")
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                                
+                            if rp64 == 1:
+                                    continue
+                                
+                            elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                            else:
+                                    True
+
+                
+                elif rp2 == 3:
+                    print("Please enter the pin for Dammd :")
+                    passs4 = int(input())
+                    if passs4 == 5740:
+                    
+                    
+                        print("Which data you want to enter food(1) or exerise(2) ? :")
+                        rp3 = int(input())
+                        if rp3 == 1:
+                            print("Please Enter The Data : ")
+                            datahf = input()
+                            with open("hammdfood.txt" , "a") as fhf:
+                                fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                print("\nSucessfully Added the data")
+                                print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            print("Please Enter The Data : ")
+                            datahf = input()
+                            with open("hammdex.txt" , "a") as fhf:
+                                fhf.write(str([str(gettime())])+": "+datahf+"\n")
+                                print("\nSucessfully Added the data")
+                                print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        else:
+                            True
+                    else:
+                        print("\nWrong pin")
+                        print("\nDo you want to continue(1) or exit(2) ? :")
+                        rp64 = int(input())    
+                                
+                        if rp64 == 1:
+                                    continue
+                                
+                        elif rp64 == 2:
+                                    print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                    break
+                        else:
+                                    True
+
+                else:
+                    True
+            elif rp == 2:
+                print("As you are accessing sensitive data of clients please enter the admin pin ")
+                passs2 = int(input())
+                if passs2 == 34567:
+                    print("Correct pin \n")
+
+                    print("For Whom you want to resive data Harry(1) , Rohan(2) , Hammd(3) ? :")
+                    rp2 = int(input())
+                    if rp2 == 1:
+                        print("What do you want to recive Food data(1) or Exercise data(2) ? :")
+                        rp3 = int(input())
+                        if rp3 == 1:
+                            with open("harryfood.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            with open("harryex.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        else:
+                            True
+                    elif rp2 == 2:
+                        print("What do you want to recive Food data(1) or Exercise data(2) ? :")
+                        rp3 = int(input())
+                        if rp3 == 1:
+                            with open("rohanfood.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            with open("rohanex.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        else:
+                            True
+                    elif rp2 == 3:
+                        print("What do you want to recive Food data(1) or Exercise data(2) ? :")
+                        rp3 = int(input())
+                        if rp3 == 1:
+                            with open("hammdfood.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                        elif rp3 == 2:
+                            with open("hammdex.txt" , "r") as fhf:
+                                datahf = fhf.read()
+                                print("The Whole Data is :\n")
+                                print(datahf)
+                            print("\nDo you want to continue(1) or exit(2) ? :")
+                            rp64 = int(input())    
+                            if rp64 == 1:
+                                continue
+                            elif rp64 == 2:
+                                print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                                break
+                            else:
+                                True
+                    else:
+                        True
+                else:
+                    print("Wrong Pin")
+                    print("\nDo you want to continue(1) or exit(2) ? :")
+                    rp64 = int(input())    
+                    if rp64 == 1:
+                            continue
+                    elif rp64 == 2:
+                            print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                            break
+                    else:
+                            True
+        else:
+            print("Wrong Pin")
+            print("\nDo you want to continue(1) or exit(2) ? :")
+            rp64 = int(input())    
+            if rp64 == 1:
+                            continue
+            elif rp64 == 2:
+                            print("\nBye\nThank You For Using\nMade By Tanush Chauhan")
+                            break
+            else:
+                            True
+#Pin For Entery : 4567
+#Pin For Harry : 2956
+#Pin For Rohan : 3867
+#Pin For Dammd : 5740
+#Admin Pin : 34567</pre>
+<br><br>
+            <p class="sectionSubTagtext-small">10. Calender Printer</p>
+            <button onclick="copyToClipboard10()" id="mbtn10" class = "btn10" >Copy</button>
+            <br>
+                <br>
+                <br>
+<pre id="p10" class="prettyprint">import calendar 
+print("\nCalender Programme\n  ")
+print("Do you want to Print Calender for Just 1 mounth(1) or Whole Year(2) ?? :")
+d = int(input())
+if d == 1:
+
+    y = int(input("Enter the Year :\n "))
+    m = int(input("Enter the month :\n "))
+
+    c = calendar.month(y , m)
+    print("\n"+c+"\n")
+
+elif d == 2:
+    y = int(input("Enter the Year : "))
+    i = 0
+    while (i < 12):
+        i = i+1
+        c = calendar.month(y ,i )
+        print("\n"+c+"\n")
+print("Thank You For Using")</pre>
+    <br><p class="lklk">~~~~End~~~~</p><br><br><br>
+    <a class="btn2" href="code.html">Go Back ?</a>
+    </div>
+        
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright © 2020 - jettech.ml - All rights reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+    <script src="js/copy.js"></script>
+</body>
+</html>
+<!-- 
+<p class="sectionSubTagtext-small">Name of project</p>
+                
+                <button onclick="copyToClipboard2()" id="mbtn2" class = "btn2" >Copy</button>
+                <br>
+                <br>
+                <br>
+                <pre id="p2" class = "prettyprint">code please</pre> -->
